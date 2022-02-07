@@ -1,4 +1,4 @@
-<h1>Article List</h1>
+<h1>Article List : <%= @nb_art %> Articles</h1>
 
 <% @articles.each do |article| %>
   <h2><%= link_to article.title, article_path(article.id) %> </h2>

@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all
+    @nb_art = Article.count
   end
 
   def show
@@ -32,7 +33,6 @@ class ArticlesController < ApplicationController
     @article.destroy
     redirect_to articles_path
   end
-
 
 private
 
